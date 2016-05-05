@@ -61,14 +61,18 @@ body {
 
     .about-me {
       width: 600px;
+      display: table;
       p {
         margin-bottom: 0px;
       }
       .profile {
+        display: table-row;
+        float: left;
         border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;;
+        border-bottom-left-radius: 15px;
       }
       .info-text {
+        display: table-row;
         margin: 10px;
         width: 330px;
         float: right;
@@ -77,18 +81,23 @@ body {
         }
       }
     }
-    .experience {
+    .experience,
+    .interests {
       width: 600px;
-      .otpp-picture {
+      .otpp-picture,
+      .running-picture {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         width: 100%;
         height: auto;
       }
-    }
-    .interests {
-      width: 600px;
-      .running-picture {
+      .info-text {
         width: 100%;
-        height: auto;
+        p{
+          font-size: 25px;
+          padding: 10px;
+          margin-bottom: 0;
+        }
       }
     }
     .contact {
