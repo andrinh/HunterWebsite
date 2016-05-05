@@ -37,20 +37,26 @@
       <div class="about-me" ng-show="panel.isSelected(1)">
         <img class="profile" src="../images/profile.jpg">
         <div class="info-text">
-          <p>Hello! I'm a recent software engineering graduate from Western University who is currently seeking employment. I am particularly interested in front-end web development. Select the <a ng-click="panel.selectTab(2)">experience</a> tab to view my skills and qualifications.</p>
+          <p>Hello! I'm a recent software engineering graduate from Western University who is currently seeking employment. I am particularly interested in front-end web development. Select the <a class="link" ng-click="panel.selectTab(2)">experience</a> tab to view my skills and qualifications.</p>
         </div>
       </div>
 
       <div class="experience" ng-show="panel.isSelected(2)">
-
+        <img class="otpp-picture" src="../images/otpp.jpg">
       </div>
 
       <div class="interests" ng-show="panel.isSelected(3)">
-
+      <img class="running-picture" src="../images/running.png">
       </div>
 
       <div class="contact" ng-show="panel.isSelected(4)">
-
+        <div class="info-text">
+          <h2>Additional Information:</h2>
+          <p>Email: handrin@uwo.ca</p>
+          <p>Phone: 226-236-7427</p>
+          <p><a class="link" href="https://ca.linkedin.com/in/hunter-andrin-295888114">LinkedIn Account</a></p>
+          <p><a class="link" href="../images/resume.pdf">Resume</a></p>
+        </div>
       </div>
     </div>
 
