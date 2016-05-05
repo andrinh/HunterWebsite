@@ -1,1 +1,1 @@
-console.log('Welcome to my lair');
+console.log('Welcome to my domain');

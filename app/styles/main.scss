@@ -43,16 +43,13 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
   .content {
     background: url('../images/western-background.jpg') no-repeat center center fixed;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-    .info {
+    .about-me {
       margin: 0 auto;
       background: rgba(255,255,255,0.75);
       border-radius: 15px;
@@ -94,5 +91,14 @@ body {
 
   .header-button {
     color: #ffffff;
+    &:hover {
+      color: #4D004D;
+    }
+  }
+  .active {
+    .header-button {
+      background-color: #ffffff !important;
+      color: #4D004D !important;
+    }
   }
 }
