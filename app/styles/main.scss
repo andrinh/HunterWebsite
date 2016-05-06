@@ -63,9 +63,9 @@ body {
       margin: 0 auto;
     }
 
-    .interests-running,
-    .interests-smash,
-    .interests-soccer {
+    .module-big,
+    .module-left,
+    .module-right {
       background: rgba(255,255,255,0.75);
       border-radius: 15px;
     }
@@ -77,16 +77,17 @@ body {
         margin-bottom: 0px;
       }
       .profile {
+        width: 240px;
         display: table-row;
         float: left;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
       }
       .info-text {
-        display: table-row;
-        margin: 10px;
-        width: 330px;
-        float: right;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+        width: 100%;
         p{
           font-size: 25px;
         }
@@ -95,11 +96,11 @@ body {
     .experience,
     .interests {
       width: 600px;
-      .interests-running,
-      .interests-smash {
+      .module-big,
+      .module-left {
         margin-bottom: 50px;
       }
-      .interests-smash {
+      .module-left {
         display: table;
         .smash-picture {
           display: table-row;
@@ -109,7 +110,7 @@ body {
           width: 300px;
         }
       }
-      .interests-soccer {
+      .module-right {
         display: table;
         .soccer-picture {
           display: table-cell;
