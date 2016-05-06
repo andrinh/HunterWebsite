@@ -52,9 +52,21 @@ body {
     
     .about-me,
     .experience,
+    .contact {
+      background: rgba(255,255,255,0.75);
+      border-radius: 15px;
+    }
+
+    .about-me,
+    .experience,
     .interests,
     .contact {
       margin: 0 auto;
+    }
+
+    .interests-running,
+    .interests-smash,
+    .interests-soccer {
       background: rgba(255,255,255,0.75);
       border-radius: 15px;
     }
@@ -84,6 +96,39 @@ body {
     .experience,
     .interests {
       width: 600px;
+      .interests-running,
+      .interests-smash {
+        margin-bottom: 50px;
+      }
+      .interests-smash {
+        display: table;
+        .smash-picture {
+          display: table-row;
+          float: left;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          width: 300px;
+        }
+        .info-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 300px;
+        }
+      }
+      .interests-soccer {
+        display: table;
+        .soccer-picture {
+          display: table-cell;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 300px;
+        }
+        .info-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 300px;
+        }
+      }
       .otpp-picture,
       .running-picture {
         border-top-left-radius: 15px;
