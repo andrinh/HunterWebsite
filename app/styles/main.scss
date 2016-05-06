@@ -23,8 +23,14 @@ body {
   padding-right: 20px;
 }
 
+.text-name {
+  color: #ffffff;
+}
+
 /* Custom page header */
 .header {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #4d004d;
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -41,34 +47,59 @@ body {
   color: #777;
 }
 
+.header-button {
+  color: #ffffff;
+  &:hover {
+    color: #4D004D;
+    cursor: pointer;
+  }
+}
+.active {
+  .header-button {
+    background-color: #ffffff !important;
+    color: #4D004D !important;
+  }
+}
+.link {
+  cursor: pointer;
+}
+.module-margin-bottom {
+  margin-bottom: 40px;
+}
+
+.content {
+  background: url('../images/western-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .about-me,
+  .experience,
+  .interests,
+  .contact {
+    margin: 0 auto;
+  }
+
+  .about-me,
+  .contact {
+    background: rgba(255,255,255,0.75);
+    border-radius: 15px;
+  }
+
+  .module-big,
+  .module-left,
+  .module-right {
+    background: rgba(255,255,255,0.75);
+    border-radius: 15px;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
   .content {
-    background: url('../images/western-background.jpg') no-repeat center center fixed;
-    background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-    
-    .about-me,
-    .contact {
-      background: rgba(255,255,255,0.75);
-      border-radius: 15px;
-    }
-
-    .about-me,
-    .experience,
-    .interests,
-    .contact {
-      margin: 0 auto;
-    }
-
-    .module-big,
-    .module-left,
-    .module-right {
-      background: rgba(255,255,255,0.75);
-      border-radius: 15px;
-    }
 
     .about-me {
       width: 600px;
@@ -150,40 +181,7 @@ body {
     }
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* Space out the masthead */
-  .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .text-name {
-    color: #ffffff;
-  }
-
-  .header-button {
-    color: #ffffff;
-    &:hover {
-      color: #4D004D;
-      cursor: pointer;
-    }
-  }
-  .active {
-    .header-button {
-      background-color: #ffffff !important;
-      color: #4D004D !important;
-    }
-  }
-  .link {
-    cursor: pointer;
-  }
-  .margin-bottom-50 {
+  .module-margin-bottom {
     margin-bottom: 50px;
   }
 }
