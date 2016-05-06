@@ -89,17 +89,13 @@ body {
         padding: 10px;
         width: 100%;
         p{
-          font-size: 25px;
+          font-size: 24px;
         }
       }
     }
     .experience,
     .interests {
       width: 600px;
-      .module-big,
-      .module-left {
-        margin-bottom: 50px;
-      }
       .module-left {
         display: table;
         .smash-picture {
@@ -134,7 +130,7 @@ body {
       .info-text {
         width: 100%;
         p{
-          font-size: 25px;
+          font-size: 24px;
           padding: 10px;
           margin-bottom: 0;
         }
@@ -148,7 +144,7 @@ body {
           margin-top: 10px;
         }
         p {
-          font-size: 25px;
+          font-size: 24px;
         }
       }
     }
@@ -186,5 +182,8 @@ body {
   }
   .link {
     cursor: pointer;
+  }
+  .margin-bottom-50 {
+    margin-bottom: 50px;
   }
 }
