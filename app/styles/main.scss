@@ -286,6 +286,7 @@ body {
         }
       }
     }
+
     .experience,
     .interests {
       width: 600px;
@@ -316,6 +317,47 @@ body {
           font-size: 30px
         }
         p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 1050px) {
+
+  .content {
+    .module-big {
+      display: table;
+    }
+
+    .experience,
+    .interests {
+      width: 900px;
+      .otpp-picture,
+      .running-picture {
+        width: 600px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+      }
+      .module-left {
+        .smash-picture {
+          width: 300px;
+        }
+      }
+      .module-right {
+        .soccer-picture {
+          width: 300px;
+        }
+      }
+      .info-text {
+        width: 300px;
+      }
+      .info-text {
+        width: 100%;
+        p{
           font-size: 24px;
         }
       }
