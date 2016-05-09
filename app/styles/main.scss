@@ -59,18 +59,48 @@ body {
   color: #777;
 }
 
-.header-button {
-  color: #ffffff;
-  &:hover {
-    color: #4D004D;
-    cursor: pointer;
+.dropdown {
+  .header-dropdown {
+    background-color: #4D004D;
+    height: 40px;
+    .menu-button {
+      height: 20px;
+    }
+  }
+  .dropdown-menu {
+    .header-button {
+      background-color: #ffffff;
+      color: #4D004D;
+      line-height: 2.428571;
+      &:hover {
+        color: #4D004D;
+        background-color: #eeeeee;
+        cursor: pointer;
+      }
+    }
+    .active {
+      .header-button {
+        background-color: #4D004D !important;
+        color: #ffffff !important;
+      }
+    }
   }
 }
-.active {
+
+.nav {
   .header-button {
-    background-color: #ffffff !important;
-    color: #4D004D !important;
+    color: #ffffff;
+    &:hover {
+      color: #4D004D;
+      cursor: pointer;
+    }
   }
+  .active {
+    .header-button {
+      background-color: #ffffff !important;
+      color: #4D004D !important;
+    }
+}
 }
 .link {
   cursor: pointer;

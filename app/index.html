@@ -31,15 +31,15 @@
         <li ng-class="{active:panel.isSelected(4)}"><a class="header-button" ng-click="panel.selectTab(4)">Contact</a></li>
       </ul>
       <ul class="dropdown pull-right mobile">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+        <button type="button" class="btn dropdown-toggle header-dropdown" data-toggle="dropdown">
+          <img class="menu-button" src="../images/menu-icon.png">
         </button>
-          <ul class="dropdown-menu">
-            <li ng-class="{active:panel.isSelected(1)}"><a class="header-button" ng-click="panel.selectTab(1)">About Me</a></li>
-            <li ng-class="{active:panel.isSelected(2)}"><a class="header-button" ng-click="panel.selectTab(2)">Experience</a></li>
-            <li ng-class="{active:panel.isSelected(3)}"><a class="header-button" ng-click="panel.selectTab(3)">Interests</a></li>
-            <li ng-class="{active:panel.isSelected(4)}"><a class="header-button" ng-click="panel.selectTab(4)">Contact</a></li> 
-          </ul>
-        </li>
+        <ul class="dropdown-menu">
+          <li ng-class="{active:panel.isSelected(1)}"><a class="header-button" ng-click="panel.selectTab(1)">About Me</a></li>
+          <li ng-class="{active:panel.isSelected(2)}"><a class="header-button" ng-click="panel.selectTab(2)">Experience</a></li>
+          <li ng-class="{active:panel.isSelected(3)}"><a class="header-button" ng-click="panel.selectTab(3)">Interests</a></li>
+          <li ng-class="{active:panel.isSelected(4)}"><a class="header-button" ng-click="panel.selectTab(4)">Contact</a></li> 
+        </ul>
       </ul>
       <h3 class="text-name">Hunter Andrin</h3>
     </div>
