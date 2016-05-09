@@ -67,6 +67,12 @@ body {
   margin-bottom: 40px;
 }
 
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
 .content {
   background: url('../images/western-background.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -78,7 +84,7 @@ body {
   .module-right,
   .about-me,
   .contact {
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.85);
     border-radius: 10px;
   }
 
@@ -96,11 +102,10 @@ body {
       margin-bottom: 0px;
     }
     .profile {
-      width: 120px;
-      display: table-row;
-      float: left;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      width: 110px;
+      vertical-align: middle;
+      margin: 10px 0 10px 10px;
+      border-radius: 10px;
     }
     .info-text {
       display: table-cell;
@@ -118,20 +123,19 @@ body {
     .module-left {
       display: table;
       .smash-picture {
-        display: table-row;
-        float: left;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        width: 150px;
+        vertical-align: middle;
+        margin: 10px 0 10px 10px;
+        border-radius: 10px;
+        width: 140px;
       }
     }
     .module-right {
       display: table;
       .soccer-picture {
-        display: table-cell;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        width: 150px;
+        vertical-align: middle;
+        margin: 10px 10px 10px 0;
+        border-radius: 10px;
+        width: 140px;
       }
     }
     .info-text {
@@ -170,8 +174,13 @@ body {
   } 
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
+  .module-margin-bottom {
+    margin-bottom: 50px;
+  }
 
   .content {
     padding-top: 100px;
@@ -182,15 +191,21 @@ body {
     .module-right,
     .about-me,
     .contact {
+      background: rgba(255,255,255,0.8);
       border-radius: 15px;
     }
 
     .about-me {
       width: 600px;
       .profile {
+        float: left;
         width: 240px;
+        padding: 0;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
       }
       .info-text {
         p{
@@ -205,6 +220,9 @@ body {
         .smash-picture {
           border-top-left-radius: 15px;
           border-bottom-left-radius: 15px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          margin: 0;
           width: 300px;
         }
       }
@@ -212,6 +230,9 @@ body {
         .soccer-picture {
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          margin: 0;
           width: 300px;
         }
       }
@@ -222,6 +243,9 @@ body {
       .running-picture {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
       }
       .info-text {
         width: 100%;
@@ -241,9 +265,5 @@ body {
         }
       }
     }
-  }
-
-  .module-margin-bottom {
-    margin-bottom: 50px;
   }
 }
