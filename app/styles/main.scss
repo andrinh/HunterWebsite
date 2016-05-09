@@ -174,6 +174,95 @@ body {
   } 
 }
 
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 580px) {
+
+  .content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .module-big,
+    .module-left,
+    .module-right,
+    .about-me,
+    .contact {
+      background: rgba(255,255,255,0.8);
+      border-radius: 15px;
+    }
+
+    .about-me {
+      width: 500px;
+      .profile {
+        float: left;
+        width: 200px;
+        padding: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+      }
+      .info-text {
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+    .experience,
+    .interests {
+      width: 500px;
+      .module-left {
+        .smash-picture {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          margin: 0;
+          width: 250px;
+        }
+      }
+      .module-right {
+        .soccer-picture {
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          margin: 0;
+          width: 250px;
+        }
+      }
+      .info-text {
+        width: 250px;
+      }
+      .otpp-picture,
+      .running-picture {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+      }
+      .info-text {
+        width: 100%;
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+    .contact {
+      width: 320px;
+      .info-text {
+        h2 {
+          font-size: 27px
+        }
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -186,26 +275,10 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 
-    .module-big,
-    .module-left,
-    .module-right,
-    .about-me,
-    .contact {
-      background: rgba(255,255,255,0.8);
-      border-radius: 15px;
-    }
-
     .about-me {
       width: 600px;
       .profile {
-        float: left;
         width: 240px;
-        padding: 0;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        margin: 0;
       }
       .info-text {
         p{
@@ -218,34 +291,16 @@ body {
       width: 600px;
       .module-left {
         .smash-picture {
-          border-top-left-radius: 15px;
-          border-bottom-left-radius: 15px;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          margin: 0;
           width: 300px;
         }
       }
       .module-right {
         .soccer-picture {
-          border-top-right-radius: 15px;
-          border-bottom-right-radius: 15px;
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-          margin: 0;
           width: 300px;
         }
       }
       .info-text {
         width: 300px;
-      }
-      .otpp-picture,
-      .running-picture {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        margin: 0;
       }
       .info-text {
         width: 100%;
