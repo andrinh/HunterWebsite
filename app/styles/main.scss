@@ -340,7 +340,7 @@ body {
   }
 
   .yes-big-screen {
-    display: initial !important;
+    display: table-cell !important;
   }
 
   .no-margin-bottom {
@@ -390,6 +390,9 @@ body {
             width: 425px;
             border-top-left-radius: 15px;
             border-bottom-right-radius: 0px;
+          }
+          .temporary-div-filler {
+            height: 186.667px;
           }
         }
       }
