@@ -15,6 +15,10 @@ $icon-font-path: '../fonts/';
   display: none !important;
 }
 
+.no-mobile {
+  display: none;
+}
+
 .yes-big-screen {
   display: none !important;
 }
@@ -184,6 +188,14 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 580px) {
+
+  .no-mobile {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
 
   .content {
     padding-top: 80px;
