@@ -15,6 +15,10 @@ $icon-font-path: '../fonts/';
   display: none !important;
 }
 
+.yes-big-screen {
+  display: none !important;
+}
+
 /* Space out content a bit */
 body {
   padding-bottom: 20px;
@@ -331,6 +335,18 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1050px) {
 
+  .no-big-screen {
+    display: none !important;
+  }
+
+  .yes-big-screen {
+    display: initial !important;
+  }
+
+  .no-margin-bottom {
+    margin-bottom: 0 !important;
+  }
+  
   .content {
     .module-big {
       display: table;
@@ -346,14 +362,35 @@ body {
         border-bottom-left-radius: 15px;
         border-top-right-radius: 0px;
       }
-      .module-left {
-        .smash-picture {
-          width: 300px;
+
+      .small-module-container {
+        display: table;
+        width: 900px;
+        .module-left {
+          display: block;
+          float: left;
+          width: 425px;
+          .helper {
+            display: none;
+          }
+          .smash-picture {
+            width: 425px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+          }
         }
-      }
-      .module-right {
-        .soccer-picture {
-          width: 300px;
+        .module-right {
+          display: block;
+          float: right;
+          width: 425px;
+          .helper {
+            display: none;
+          }
+          .soccer-picture {
+            width: 425px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 0px;
+          }
         }
       }
       .info-text {
