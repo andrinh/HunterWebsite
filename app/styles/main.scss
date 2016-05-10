@@ -148,7 +148,7 @@ body {
     .profile {
       width: 110px;
       vertical-align: middle;
-      margin: 10px 0 10px 10px;
+      margin: 44px 0 10px 10px;
       border-radius: 10px;
     }
     .info-text {
@@ -172,6 +172,11 @@ body {
         border-radius: 10px;
         width: 140px;
       }
+      .add-margin {
+        .smash-picture {
+          margin: 37px 0 10px 10px;
+        }
+      }
     }
     .module-right {
       display: table;
@@ -180,6 +185,11 @@ body {
         margin: 10px 10px 10px 0;
         border-radius: 10px;
         width: 140px;
+      }
+      .add-margin {
+        .soccer-picture {
+          margin: 17px 10px 10px 0;
+        }
       }
     }
     .info-text {
@@ -272,6 +282,11 @@ body {
           margin: 0;
           width: 250px;
         }
+        .add-margin {
+          .smash-picture {
+            margin: 0;
+          }
+        }
       }
       .module-right {
         .soccer-picture {
@@ -281,6 +296,11 @@ body {
           border-bottom-left-radius: 0;
           margin: 0;
           width: 250px;
+        }
+        .add-margin {
+          .soccer-picture {
+            margin: 0;
+          }
         }
       }
       .info-text {
