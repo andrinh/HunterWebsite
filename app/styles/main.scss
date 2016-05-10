@@ -110,13 +110,15 @@ body {
 }
 
 .helper {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 .content {
-  background: url('../images/western-background.jpg') no-repeat center center fixed;
+  background-image: url('../images/western-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
